@@ -1,5 +1,5 @@
 "use client"
-import {NavBar, Footer, PriceCard} from "../../components";
+import {NavBar, Footer, PriceCard} from "@/components";
 import {animate,motion,useScroll,useTransform} from "framer-motion";
 import Image from "next/image";
 
