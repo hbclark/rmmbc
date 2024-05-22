@@ -8,12 +8,14 @@ export default function Home() {
   return (
    <>
    <div className="w-full h-screen">
-    <NavBar />  
+    <NavBar />
    <Carousel />
    <id id="about"/>
    <MemberShip />
    <Events />
+   <div id="gallery" />
    <Gallery />
+   <div id="contact" />
    <Contact />  
    <Footer />
    </div>
