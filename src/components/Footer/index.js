@@ -43,15 +43,15 @@ export default function Footer() {
             <section className="mb-3 lg:mb-0">
                 <h2 className="text-xl border-goldenYellow-400 border-b-2 mb-2 ">Quick Links</h2>
                 <ul>
-                    <motion.li className="flex py-1 text-gray-800 hover:text-gray-600 hover:underline hover:-translate-y-[2px] transition-transform"
-                    initial={{ x: -20, opacity: 0 }}  whileInView={{x:0, opacity: 1}} transition={{duration: 0.2,ease: "easeInOut"}}
+                    <motion.li className="flex py-1 text-gray-800 hover:text-gray-600 hover:underline "
+                    initial={{ x: -20, opacity: 0 }}  whileInView={{x:0, opacity: 1}} whileHover={{translateY:-2}}  transition={{duration: 0.2,ease: "easeInOut"}}
                     ><FaArrowRight className="mt-1 mr-1 "/><Link href="/">Home</Link></motion.li>
-                    <motion.li className="flex py-1 text-gray-800 hover:text-gray-600 hover:underline hover:-translate-y-[2px] transition-transform"
-                     initial={{ x: -20, opacity: 0 }}  whileInView={{x:0, opacity: 1}} transition={{duration: 0.2,ease: "easeInOut"}}><FaArrowRight className="mt-1 mr-1 "/><Link href="/purpose">Purpose</Link></motion.li>
-                    <motion.li className="flex py-1 text-gray-800 hover:text-gray-600 hover:underline hover:-translate-y-[2px] transition-transform"
-                     initial={{ x: -20, opacity: 0 }}  whileInView={{x:0, opacity: 1}} transition={{duration: 0.2,ease: "easeInOut"}}><FaArrowRight className="mt-1 mr-1 "/><Link href="/about">About Us</Link></motion.li>
-                    <motion.li className="flex py-1 text-gray-800 hover:text-gray-600 hover:underline hover:-translate-y-[2px] transition-transform"
-                     initial={{ x: -20, opacity: 0 }}  whileInView={{x:0, opacity: 1}} transition={{duration: 0.2,ease: "easeInOut"}}><FaArrowRight className="mt-1 mr-1 "/><Link href="/contact">Contact Us</Link></motion.li>
+                    <motion.li className="flex py-1 text-gray-800 hover:text-gray-600 hover:underline whileHover={{translateY:-2}}"
+                     initial={{ x: -20, opacity: 0 }}  whileInView={{x:0, opacity: 1}} whileHover={{translateY:-2}} transition={{duration: 0.2,ease: "easeInOut"}}><FaArrowRight className="mt-1 mr-1 "/><Link href="/purpose">Purpose</Link></motion.li>
+                    <motion.li className="flex py-1 text-gray-800 hover:text-gray-600 hover:underline "
+                     initial={{ x: -20, opacity: 0 }}  whileInView={{x:0, opacity: 1}} whileHover={{translateY:-2}} transition={{duration: 0.2,ease: "easeInOut"}}><FaArrowRight className="mt-1 mr-1 "/><Link href="/about">About Us</Link></motion.li>
+                    <motion.li className="flex py-1 text-gray-800 hover:text-gray-600 hover:underline "
+                     initial={{ x: -20, opacity: 0 }}  whileInView={{x:0, opacity: 1}} whileHover={{translateY:-2}} transition={{duration: 0.2,ease: "easeInOut"}}><FaArrowRight className="mt-1 mr-1 "/><Link href="/contact">Contact Us</Link></motion.li>
                 </ul>
             </section>
             <section>

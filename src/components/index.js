@@ -6,10 +6,11 @@ import PriceCard from "./PriceCard";
 import MemberShip from "./MemberShip";
 import EventItem from "./EventItem";
 import Events from "./Events";
-
+import Gallery from "./Gallery";
+import Contact from "./Contact";
 export {
   Carousel,
   ChatButton,
   Footer,
   NavBar,
-  PriceCard,MemberShip,EventItem,Events}
+  PriceCard,MemberShip,EventItem,Events,Gallery,Contact}

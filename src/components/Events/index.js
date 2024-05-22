@@ -77,7 +77,7 @@ export default function Events() {
  ]
   return (
     <div className="my-10">
-        <h2 className="mb-6 text-center text-3xl font-bold">Latest Events</h2>
+        <h2 className="mb-10 text-center text-4xl font-bold">Latest Events</h2>
     <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-2">
         {events.map((event, index) => (
         <EventItem  key={index} event ={event}/>   
