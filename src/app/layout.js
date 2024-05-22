@@ -7,8 +7,8 @@ import ChatButton from "@/components/ChatButton";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "A2Z Recycle Pty. Ltd",
-  description: "A2Z Recycle Pty. Ltd",
+  title: "RWMBC",
+  description: "RWMBC is rock bike club",
 };
 
 export default function RootLayout({ children }) {

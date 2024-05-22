@@ -61,7 +61,7 @@ export default function NavBar() {
               <Link href="/"
                 className="w-10 h-10">
                  
-                <Image src="/images/a2z.svg" alt="A2Z Logo" width={30} height={30} 
+                <Image src="/images/shots/icon.jpg" alt="A2Z Logo" width={30} height={30} 
               /></Link> 
             </h1>
             
@@ -98,7 +98,7 @@ export default function NavBar() {
             <a href="index.html"
                 className="absolute left-6 top-5 w-9 h-9">
                  
-                <Image src="/images/a2z.svg" alt="A2Z Logo" width={30} height={30} className="mt-1"
+                <Image src="/images/shots/icon.jpg" alt="A2Z Logo" width={30} height={30} className="mt-1"
               /></a> 
             <ul className="mt-14 flex flex-col gap-2 ">
             

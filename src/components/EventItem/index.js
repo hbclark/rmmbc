@@ -7,7 +7,8 @@ export default function EventItem({event}) {
   return (
     
     <div className=" border-t-8 border rounded-md shadow-md border-goldenYellow-700 rounded-t-xl  mx-auto relative flex  flex-col">
-        <Image src={event.img} alt={event.title} width={400} height={500}/>
+        
+        <div className="w-max-[400px]   overflow-hidden"><Image src={event.img} alt={event.title} width={400} height={500} className="hover:scale-110 transition-transform cursor-pointer"/></div>
         <h3 className="mt-4 pb-2 pl-2 border-b-4 border-goldenYellow-600">{event.title}</h3>
         <div className="  ">
             <ul>{
@@ -18,7 +19,7 @@ export default function EventItem({event}) {
                     transition={{duration:0.5,ease:"easeInOut",delay:0.1*index}}
                     
 
-                    className={clsx("px-2", index %2 === 0?"bg-retroBlue-100":"bg-retroBlue-200" ,"py-2 hover:bg-retroBlue-300")}
+                    className={clsx("px-2 cursor-pointer", index %2 === 0?"bg-retroBlue-100":"bg-retroBlue-200" ,"py-2 hover:bg-retroBlue-300")}
                     key={index}>
                         {schedule.time}  {schedule.activity}
                     </motion.li>
