@@ -17,10 +17,10 @@ export default function PriceCard({
       <motion.div
         className={`w-72 h-[550px] mx-auto border rounded-md border-t-8 ${borderColor} rounded-t-md shadow-xl hover:-translate-y-1
         transition-transform `}
-        initial={{ opacity: 0, y: 200 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5,ease: "easeInOut"}}
-        whileHover={{ scale: 1.05 }}
+        // initial={{ opacity: 0, y: 200 }}
+        // animate={{ opacity: 1, y: 0 }}
+        // transition={{ duration: 0.5,ease: "easeInOut"}}
+        // whileHover={{ scale: 1.05 }}
       >
         {/* Title */}
         <div className={`mx-4 mb-8 border-b-4 ${borderColor}`}>

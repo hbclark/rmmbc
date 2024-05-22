@@ -1,30 +1,16 @@
 "use client"
+import Link from 'next/link';
 import {useState} from 'react';
-import { IoChatbubbleEllipsesOutline } from "react-icons/io5";
+import { IoIosArrowRoundUp } from "react-icons/io";
 import { MdOutlineMinimize } from "react-icons/md";
 
-function ChatFrom(){
-    const [isChatBoxOpen,setIsChatBoxOpen] = useState(false);
-    return(
-    
-        <form>
-            
-            <div className="relative bg-rust-300">
-                <button><MdOutlineMinimize /></button>
-                
-            <h2> Chat with us</h2><label htmlFor="help" className="sr-only"> help</label>
-            <input type="text" id="help" placeholder="How can we help you?" /></div>
-            
-
-        </form>
-    )
-}
 export default function ChatButton() {
     const [isChatBoxOpen,setIsChatBoxOpen] = useState(false);
   return (
-    <div className="fixed bottom-20  right-20 bg-rust-300">
-        
-        <IoChatbubbleEllipsesOutline />
+    <div className="fixed  bottom-10  right-10 ">
+        <Link href="/#home">
+        <IoIosArrowRoundUp className="w-10 h-10 rounded-full border border-goldenYellow-600" />
+        </Link>
     </div>
   )
 }

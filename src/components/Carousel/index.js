@@ -4,7 +4,7 @@
 import {useState,useEffect} from 'react';
 import { IoIosArrowForward,IoIosArrowBack } from "react-icons/io";
 import clsx from 'clsx';
-import CountUp from 'react-countup';
+
 import {motion,useScroll,useTransform,AnimatePresence} from 'framer-motion';
 
 function Slider({title,img,description,button}){
@@ -19,6 +19,7 @@ function Slider({title,img,description,button}){
         className="relative w-full h-full  text-retroBlue-200 
             z-10 overflow-hidden
             bg-[image:var(--image-url)]
+            
             bg-no-repeat bg-center bg-cover bg-fixed
             before:content-['']
             before:absolute
@@ -39,9 +40,9 @@ function Slider({title,img,description,button}){
             initial={{scale:1,opacity:1}}
             style={{scale:yText,opacity:opacityText}}
             transition={{opacity:{ease: "easeInOut",duration:0.5},scaleY:{ease: "easeInOut",duration:0.5}}}>{description}
-            <CountUp end={100000} duration={5} delay={1} separator=","/>
+            
             </motion.p> 
-            <motion.button className=" mx-auto w-max  bg-goldenYellow-500 px-2 py-2 rounded-md hover:text-goldenYellow-500 hover:bg-transparent hover:outline hover:outline-1 hover:outline-goldenYellow-500"
+            <motion.button className="mx-auto w-max  bg-goldenYellow-500 px-2 py-2 rounded-md hover:text-goldenYellow-500 hover:bg-transparent hover:outline hover:outline-1 hover:outline-goldenYellow-500"
             initial={{scale:1,opacity:1}}
             style={{scale:yText,opacity:opacityText}}
             transition={{opacity:{ease: "easeInOut",duration:0.5},scaleY:{ease: "easeInOut",duration:0.5}}}>{button}</motion.button>
@@ -78,16 +79,16 @@ export default function Carousel() {
     <>
     
 <div className="relative  w-full h-[calc(100%-80px)] z-1')]">
-<button className="z-20 block absolute top-1/2 right-2 mr-2 -translate-y-1/2 cursor-pointer  text-[rgba(255,255,255,0.3)] px-4 py-2 rounded-full bg-transparent outline outline-1 outline-gray-100/10 hover:outline-gray-100/50 hover:scale-110 hover:text-[rgba(255,255,255,0.6)] hover:bg-[rgba(255,255,255,0.4]" onClick={handleClick}><IoIosArrowForward /></button>
-        <button className="z-20 absolute top-1/2 left-2 mr-2 -translate-y-1/2 cursor-pointer  text-[rgba(255,255,255,0.3)] px-4 py-2 rounded-full bg-transparent outline outline-1 outline-gray-100/10 hover:outline-gray-100/50 hover:scale-110 hover:text-[rgba(255,255,255,0.6)] hover:bg-[rgba(255,255,255,0.4]" onClick={handleClick}>
+<button className="z-20 block absolute top-1/2 right-2 mr-2 -translate-y-1/2 cursor-pointer  text-[rgba(255,255,255,0.4)] px-4 py-2 rounded-full bg-transparent outline outline-1 outline-gray-100/50 hover:outline-gray-100/50 hover:scale-110 hover:text-[rgba(255,255,255,0.6)] hover:bg-[rgba(255,255,255,0.4]" onClick={handleClick}><IoIosArrowForward /></button>
+        <button className="z-20 absolute top-1/2 left-2 mr-2 -translate-y-1/2 cursor-pointer  text-[rgba(255,255,255,0.4)] px-4 py-2 rounded-full bg-transparent outline outline-1 outline-gray-100/50 hover:outline-gray-100/50 hover:scale-110 hover:text-[rgba(255,255,255,0.6)] hover:bg-[rgba(255,255,255,0.4]" onClick={handleClick}>
             <IoIosArrowBack 
         className="text-[rgba(255,255,255,0.3] hover:text-[255,255,255,0.4]"/></button>
     <AnimatePresence mode="wait" initial={false}>
     {isClicked?(
     <MotionSlider key="0" 
-    img ={'/images/Recycling-images/20_12_2022___Recycling_trucks.jpg'} onClickButton = {handleClick} title={"World's Leading Waste Management Pollution Solution"} description={"Pollution of the Reduce, Reuse, and Recycle waste process steps Recycle waste process steps discover service."} button={"Discover More"}/>):
+    img ={'/images/shots/bike06.jpg'} onClickButton = {handleClick} title={"Join the Adventure with RWMBC!"} description={"Explore thrilling trails and join a community of passionate riders with RWMBC. Elevate your biking adventures and enjoy exclusive benefits today!"} button={"Discover More"}/>):
     (<MotionSlider  key="1" 
-    onClickButton ={handleClick} title={"slider2"} img={'/images/Recycling-images/20_12_2022___Recycling_truks.jpg'}/>)}
+    onClickButton ={handleClick} title={"Ride Beyond Limits with RWMBC!"} description={"Embrace the thrill of mountain biking with RWMBC. Connect with fellow enthusiasts and unlock exclusive member privileges. Start your journey on epic trails today!"} img={'/images/shots/bike08.jpg'} button={"Discover More"}/>)}
    </AnimatePresence>
 </div>
 

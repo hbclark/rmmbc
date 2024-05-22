@@ -24,9 +24,9 @@ export default function NavBar() {
 
   const navLinks = [
     { id:1,label: "Home", href: "/",icon: <CiHome /> },
-    { id:2,label: "Purpose", href: "/purpose",icon: <SiTransmission />},
+    { id:2,label: "Events", href: "/#events",icon: <SiTransmission />},
     { id:3,label: "About Us", href: "/#about",icon: <MdOutlineRoundaboutLeft />},
-    { id:4,label: "Contact", href: "/contact",icon: <IoIosContact />},
+    { id:4,label: "Contact", href: "/#contact",icon: <IoIosContact />},
   ];
  
   const fadeInAnimationVariants = {
@@ -45,7 +45,7 @@ export default function NavBar() {
 
 
   return (
-    <header className="  sticky top-0 lg:px-40 text-black bg-gray-100 z-20">
+    <header className="fixed w-full top-0 lg:px-40 text-black bg-gray-100 z-20">
       <nav className="flex  sm:px-0 px-8 justify-between pb-2 pt-4 mt-2 ">
        
           <section className=" flex items-center gap-4 ">

@@ -1,15 +1,19 @@
 "use client"
 import {NavBar, Footer, PriceCard} from "../../components";
-import {animate,motion,useScroll,useTransform} from "framer-motion";
+import {motion} from "framer-motion";
 import Image from "next/image";
 
 
 export default function MemberShip() {
-    const {scrollY} = useScroll();
-    const yText = useTransform(scrollY,[0,50,100],[1,1.3,1.4,])
-    const opacityText = useTransform(scrollY,[0,200,300],[1,1,1])
+   
+    
+    
     const MotionPriceCard = motion(PriceCard);
     
+    const fadeInAnimationVariants=  {
+        initial:{opacity:0,y:20},
+        animate:(index) => ({opacity:1,y:0,transition:{delay:index*0.1}}),
+    }
 
     
     const members = [
@@ -82,20 +86,42 @@ export default function MemberShip() {
   return (
     <>
    {/* About Us */}
-   <div className="flex flex-row xl:flex-col justify-center  items-center h-1/2 w-full bg-[url('/images/shots/bike05.jpg')] bg-center bg-cover bg-no-repeat bg-fixed text-white text-left">
-    <h1 className="uppercase text-3xl">ROck Wallaby</h1>
-    <p>Are you concerned about finding interesting places to ride?</p>
-    <button>Learn More</button>
+   <div>
+   <div className="container mx-auto px-4 py-8">
+                    <h1 className="text-3xl font-bold text-center mb-6">About Us</h1>
+                    <div className="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h2 className="text-2xl font-semibold">Why Choose RWMBC?</h2>
+                            <p className="mt-4">
+                                Are you concerned about finding interesting places to ride? RWMBC is your regional lobby group ensuring access to trails and developing. Support the club that supports you.
+                            </p>
+                            <p className="mt-4">
+                                Are you looking for someone to ride with? The club is family-friendly and offers a variety of competitive and social activities for riders of all ages and abilities. Being part of RWMBC is a great way to meet fellow riders, explore the trails, and improve your riding skills.
+                            </p>
+                        </div>
+                        <div>
+                            <h2 className="text-2xl font-semibold">Membership Benefits</h2>
+                            <p className="mt-4">
+                                If you&apos;re wearing gloves and a helmet, you&apos;ve got 2 essentials covered. The third coverage you should consider is insurance. Your membership automatically enrols you as a member of MTBA, which covers your insurance when you&rsquo;re involved in organised events such as races and social rides. It also provides some cover at all times on the bike.
+                            </p>
+                            <p className="mt-4">
+                                It can be an expensive hobby. Of course, you&apos;ll save a lot of money on day licences by becoming a member. In addition, most specialist bike shops in the Nowendoc region will give a 5% to 10% discount on parts to RWMBC members on presentation of their rider&rsquo;s licence.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+   <div className="flex flex-col  justify-center  items-center h-lvh w-full bg-[url('/images/shots/bike05.jpg')] bg-center bg-cover bg-no-repeat bg-fixed text-white text-left">
+    <h1 className="uppercase text-3xl mb-4">ROck Wallaby</h1>
+    <p className="mb-2">Are you concerned about finding interesting places to ride?</p>
+    <button className="mx-auto w-max mb-4 bg-goldenYellow-500 px-2 py-2 rounded-md hover:text-goldenYellow-500 hover:bg-transparent hover:outline hover:outline-1 hover:outline-goldenYellow-500">Learn More</button>
     
    </div>
 
     <div className="flex justify-center flex-row items-center h-60 bg-red-700 p-10" >
-        <motion.h1 className="flex  text-7xl font-semibold text-white text-center"
+        <h3 className="flex  text-7xl font-semibold text-white text-center"
         
-        initial={{scale:1,opacity:1}}
-            style={{scale:yText,opacity:opacityText}}
-            transition={{opacity:{ease: "easeInOut",duration:0.5},scaleY:{ease: "easeInOut",duration:0.5}}}
-        >$0 Join Fee</motion.h1>
+        
+        >$0 Join Fee</h3>
        
 
         
@@ -114,7 +140,6 @@ export default function MemberShip() {
             memberPrice={member.memberPrice}
             
             
-           
             
 
           />
@@ -136,7 +161,7 @@ export default function MemberShip() {
 
 
 
-    
+    </div>
    
     </>
 

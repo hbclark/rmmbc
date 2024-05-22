@@ -8,9 +8,11 @@ import EventItem from "./EventItem";
 import Events from "./Events";
 import Gallery from "./Gallery";
 import Contact from "./Contact";
+import News from "./News";
+import Counters from "./Counters";
 export {
   Carousel,
   ChatButton,
   Footer,
   NavBar,
-  PriceCard,MemberShip,EventItem,Events,Gallery,Contact}
+  PriceCard,MemberShip,EventItem,Events,Gallery,Contact,News,Counters}
