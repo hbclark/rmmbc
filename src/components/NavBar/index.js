@@ -71,7 +71,7 @@ export default function NavBar() {
             <Link
               href={link.href}
               key={link.id}
-              className="hidden lg:block text-goldenYellow-600 font-bold
+              className="hidden lg:block text-goldenYellow-700 font-bold
               hover:text-goldenYellow-400 transition-colors duration-300 ease-in-out"
               
             >
