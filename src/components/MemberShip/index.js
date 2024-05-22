@@ -127,7 +127,7 @@ export default function MemberShip() {
         
     </div>
     <h1 className="text-4xl font-bold text-center my-10">Membership Options</h1>
-    <div className="grid my-20 px-0 gap-10 lg:px-60 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3">
+    <div className="grid my-20 px-0 gap-10 lg:px-60 sm:grid-cols-1 md:grid-cols-2  lg:grid-cols-3">
       
 
         {members.map((member, index) => (
@@ -145,8 +145,8 @@ export default function MemberShip() {
           />
         ))}
     </div>
-    <div className="flex  px-10 flex-col justify-center items-center xl:flex-row lg:flex-row bg-red-700  text-white">
-        <div className="py-20 px-2 lg:px-96  flex-1">
+    <div className="flex  px-10 flex-col  justify-center items-center xl:flex-row lg:flex-row bg-red-700  text-white">
+        <div className="py-20 px-2 lg:px-20 flex-1">
             <h3 className="text-2xl font-bold mb-3">Join Rock Bike {new Date().getFullYear()}!</h3>
             <p className="mb-4">Ready for an adrenaline-pumping adventure? Gear up for the ultimate rock biking experience at the Rock Bike Rally {new Date().getFullYear()}! </p>
             
