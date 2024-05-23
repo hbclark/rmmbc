@@ -59,7 +59,7 @@ export default function Footer() {
                 <form className="flex gap-2 w-max-full sm:flex-row flex-col">
                     <label htmlFor="subscription" className="sr-only">subscription</label>
                     <input type="email" id="subscription" placeholder="Email" className="border-2 border-gray-300 px-2 py-1 rounded-md"/>
-                    <label htmlFOr="subscribe" className="sr-only">Subscribe</label>
+                    <label htmlFor="subscribe" className="sr-only">Subscribe</label>
                     <button id ="subscribe" className="bg-goldenYellow-600 text-white px-2 py-1 border-1 border-transparent rounded-md hover:text-goldenYellow-500 hover:outline-1 hover:outline hover:outline-goldenYellow-500 hover:bg-transparent transition-transform">Subscribe</button>
                 </form>
             </section>

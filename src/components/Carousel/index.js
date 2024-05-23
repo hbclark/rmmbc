@@ -62,7 +62,7 @@ function Slider({ title, img, description, button }) {
           {description}
         </motion.p>
         <motion.button
-          className="mx-auto w-max  bg-goldenYellow-500 px-2 py-2 rounded-md hover:text-goldenYellow-500 hover:bg-transparent hover:outline hover:outline-1 hover:outline-goldenYellow-500"
+          className="mx-auto w-max  bg-red-600 px-2 py-2 rounded-md hover:text-goldenYellow-500 hover:bg-transparent hover:outline hover:outline-1 hover:outline-goldenYellow-500"
           initial={{ scale: 1, opacity: 1 }}
           style={{ scale: yText, opacity: opacityText }}
           transition={{
