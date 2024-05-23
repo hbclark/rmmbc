@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="lg:px-40 pb-10 lg:pb-2 ">
         <div className="flex sm:flex-row flex-col justify-between   ">
             <section className="mb-4">
-                <Image src="/images/a2z.svg" alt="A2Z Logo" width={60} height={60} className="font-bold mb-1 cursor-pointer hover:opacity-80 hover:-translate-y-[2px] transition-transform"/>
+                <Image src="/images/shots/icon.jpg" alt="A2Z Logo" width={60} height={60} className="font-bold mb-1 cursor-pointer hover:opacity-80 hover:-translate-y-[2px] transition-transform"/>
                 <p className="pb-3 text-xl">Let&apos;s create a green world together!</p>
                 <ul className="flex justify-start gap-3">
                     <li>

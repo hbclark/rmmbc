@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image";
 import Carousel from "@/components/Carousel";
-import {NavBar,MemberShip,Footer,Events,Gallery,Contact, News,Counters} from "@/components";
+import {NavBar,MemberShip,Footer,Events,Gallery,Contact, News,Counters,ChatBox} from "@/components";
 import CounterItem from "@/components/CounterItem";
 
 
@@ -23,6 +23,7 @@ export default function Home() {
    <Gallery /> */}
    <div id="contact" />
    <Contact />  
+<ChatBox />
    <Footer />
    </div>
    

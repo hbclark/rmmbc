@@ -71,8 +71,10 @@ export default function NavBar() {
             <Link
               href={link.href}
               key={link.id}
-              className="hidden lg:block text-goldenYellow-700 font-bold
-              hover:text-goldenYellow-400 transition-colors duration-300 ease-in-out"
+              className="hidden lg:block pb-[2px] text-black font-bold
+              hover:text-gray-800 hover:-translate-y-[2px]
+              hover:underline
+              transition-colors duration-300 ease-in-out"
               
             >
               {link.label}
@@ -103,7 +105,7 @@ export default function NavBar() {
             <ul className="mt-14 flex flex-col gap-2 ">
             
             {navLinks.map((link,index) => (
-              <motion.li key={link.id} className = "flex py-2 text-goldenYellow-700"
+              <motion.li key={link.id} className = "flex py-2 text-black"
               variants={fadeInAnimationVariants}
               initial="initial"
               whileInView="animate"
