@@ -9,6 +9,7 @@ export default function ChatButton() {
   return (
     <div className="fixed  bottom-10  right-10 ">
         <Link href="/#home">
+          <span className="sr-only">Back To Top</span>
         <IoIosArrowRoundUp className="w-10 h-10 rounded-full border border-goldenYellow-600" />
         </Link>
     </div>

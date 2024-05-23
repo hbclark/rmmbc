@@ -12,7 +12,9 @@ export default  function ChatBox(){
       ))}
 
       <form onSubmit={handleSubmit}>
+        <label htmlFor="chatBox" className="sr-only">ChatBox</label>
         <input
+        id="chatBox"
           className="fixed bottom-0 w-full max-w-md p-2 mb-8 border border-gray-300 rounded shadow-xl"
           value={input}
           placeholder="Say something..."
