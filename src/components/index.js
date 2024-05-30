@@ -11,9 +11,11 @@ import Contact from "./Contact";
 import News from "./News";
 import Counters from "./Counters";
 import ChatBox from "./ChatBox";
+import NewsLetter from "./NewsLetter";
+import EmailTemplate from "./EmailTemplate";
 export {
   Carousel,
   ChatButton,
   Footer,
   NavBar,
-  PriceCard,MemberShip,EventItem,Events,Gallery,Contact,News,Counters,ChatBox}
+  PriceCard,MemberShip,EventItem,Events,Gallery,Contact,News,Counters,ChatBox,NewsLetter,EmailTemplate}

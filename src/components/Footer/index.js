@@ -2,8 +2,14 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaArrowRight } from "react-icons/fa";
+import {useFormState} from "react-dom"
 import { motion } from 'framer-motion';
+import signUp from "@/app/api/email/signup"
+
+
+
 export default function Footer() {
+    const [state,formAction ] = useFormState(signUp,{});
   return (
     <footer className=" pt-10 border-t-8 border-goldenYellow-600  pl-4 lg:pl-0  ">
         <div className="lg:px-40 pb-10 lg:pb-2 ">
@@ -56,9 +62,11 @@ export default function Footer() {
             </section>
             <section>
                 <p className="mb-4 "><span className="border-b-2 border-goldenYellow-400 text-xl">Our NewsLetter</span></p>
-                <form className="flex gap-2 w-max-full sm:flex-row flex-col">
+                <form className="flex gap-2 w-max-full sm:flex-row flex-col" action={formAction}>
+                    {state.error&&<p className="text-red-500">{state.error}</p>}
+                    {state.message&&<p className="text-green-500">{state.message}</p>}
                     <label htmlFor="subscription" className="sr-only">subscription</label>
-                    <input type="email" id="subscription" placeholder="Email" className="border-2 border-gray-300 px-2 py-1 rounded-md"/>
+                    <input type="email" id="subscription" placeholder="Email" name="subscribeEmail" className="border-2 border-gray-300 px-2 py-1 rounded-md"/>
                     <label htmlFor="subscribe" className="sr-only">Subscribe</label>
                     <button id ="subscribe" className="bg-goldenYellow-600 text-white px-2 py-1 border-1 border-transparent rounded-md hover:text-goldenYellow-500 hover:outline-1 hover:outline hover:outline-goldenYellow-500 hover:bg-transparent transition-transform">Subscribe</button>
                 </form>
