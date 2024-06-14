@@ -9,7 +9,14 @@ import ChatButton from "@/components/ChatButton";
 export const metadata = {
   title: "RWMBC",
   description: "RWMBC is rock bike club",
+  other:{
+    googleSiteVerification: "IVgw6ZkDUPM4YPQZR2we6IZHY5IUC3vl_H67p_FQ1i4"
+  }
+
+ 
 };
+
+
 
 export default function RootLayout({ children }) {
   return (
@@ -23,3 +30,4 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
