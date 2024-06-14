@@ -71,7 +71,7 @@ export default function Footer() {
                     <label htmlFor="subscription" className="sr-only">subscription</label>
                     <input type="email" id="subscription" placeholder="Email" name="subscribeEmail" className="border-2 border-gray-300 px-2 py-1 rounded-md"/>
                     <label htmlFor="subscribe" className="sr-only">Subscribe</label>
-                    <button id ="subscribe" className="bg-goldenYellow-600 text-white px-2 py-1 border-1 border-transparent rounded-md hover:text-goldenYellow-500 hover:outline-1 hover:outline hover:outline-goldenYellow-500 hover:bg-transparent transition-transform">Subscribe</button>
+                    <button id ="subscribe" className="bg-goldenYellow-700 text-white px-2 py-1 border-1 border-transparent rounded-md hover:text-goldenYellow-700 hover:outline-1 hover:outline hover:outline-goldenYellow-700 hover:bg-transparent transition-transform">Subscribe</button>
                     </div>
                 </form>
             </section>

@@ -17,9 +17,9 @@ export default function Home() {
    </div>
    <div id="events">
    <Events />
-   <id id="about"/>
+   <div id="about">
    <MemberShip />
-   
+   </div>
    {/* <div id="gallery" />
    <Gallery /> */}
    <div id="contact" />
