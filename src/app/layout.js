@@ -1,10 +1,10 @@
-import { Inter } from "next/font/google";
+// import { Inter } from "next/font/google";
 
 import "./globals.css";
 import Footer from "@/components/Footer";
 import ChatButton from "@/components/ChatButton";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "RWMBC",
