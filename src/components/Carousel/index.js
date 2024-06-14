@@ -40,7 +40,7 @@ function Slider({ title, img, description, button }) {
     >
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white ">
         <motion.h1
-          className="mb-4 text-4xl font-bold max-w-xl sm:mb-7"
+          className="mb-4 text-4xl font-bold max-w-xl sm:mb-7 text-red-500"
           initial={{ scale: 1, opacity: 1 }}
           style={{ scale: yText, opacity: opacityText }}
           transition={{
@@ -51,7 +51,7 @@ function Slider({ title, img, description, button }) {
           {title}
         </motion.h1>
         <motion.p
-          className="max-w-xl mb-4 sm:mb-7"
+          className="max-w-xl mb-4 sm:mb-7 text-red-500"
           initial={{ scale: 1, opacity: 1 }}
           style={{ scale: yText, opacity: opacityText }}
           transition={{
