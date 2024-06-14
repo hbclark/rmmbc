@@ -27,7 +27,7 @@ export default function Home() {
 <ChatBox />
    <Footer />
    </div>
-   
+   </div>
    </>
   );
 }
