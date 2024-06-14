@@ -89,14 +89,14 @@ export default function Carousel() {
     <>
       <div className="relative  w-full h-[calc(100%-80px)] z-1')]">
         <button
-          className="z-20 block absolute top-1/2 right-2 mr-2 -translate-y-1/2 cursor-pointer  text-[rgba(255,255,255,0.4)] px-4 py-2 rounded-full bg-transparent outline outline-1 outline-gray-100/50 hover:outline-gray-100/50 hover:scale-110 hover:text-[rgba(255,255,255,0.6)] hover:bg-[rgba(255,255,255,0.4]"
+          className="z-20 block absolute top-1/2 right-2 mr-2 -translate-y-1/2 cursor-pointer  text-gray-600 px-4 py-2 rounded-full bg-transparent outline outline-1 outline-gray-100/50 hover:outline-gray-100/50 hover:scale-110 hover:text-gray-700 hover:bg-[rgba(255,255,255,0.4]"
           onClick={handleClick}
         >
           <span className="sr-only">Slide to right page</span><IoIosArrowForward />
         </button>
 
         <button
-          className="z-20 absolute top-1/2 left-2 mr-2 -translate-y-1/2 cursor-pointer  text-[rgba(255,255,255,0.4)] px-4 py-2 rounded-full bg-transparent outline outline-1 outline-gray-100/50 hover:outline-gray-100/50 hover:scale-110 hover:text-[rgba(255,255,255,0.6)] hover:bg-[rgba(255,255,255,0.4]"
+          className="z-20 absolute top-1/2 left-2 mr-2 -translate-y-1/2 cursor-pointer  text-gray-600 px-4 py-2 rounded-full bg-transparent outline outline-1 outline-gray-100/50 hover:outline-gray-100/50 hover:scale-110 hover:text-gray-700 hover:bg-[rgba(255,255,255,0.4]"
           onClick={handleClick}
         >
          <span className="sr-only">Slide to left page</span> <IoIosArrowBack className="text-[rgba(255,255,255,0.3] hover:text-[255,255,255,0.4]" />

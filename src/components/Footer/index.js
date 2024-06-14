@@ -62,13 +62,17 @@ export default function Footer() {
             </section>
             <section>
                 <p className="mb-4 "><span className="border-b-2 border-goldenYellow-400 text-xl">Our NewsLetter</span></p>
-                <form className="flex gap-2 w-max-full sm:flex-row flex-col" action={formAction}>
+                <form className="flex gap-2 w-max-full flex-row sm:flex-col" action={formAction}>
+                    <div>
                     {state.error&&<p className="text-red-500">{state.error}</p>}
                     {state.message&&<p className="text-green-500">{state.message}</p>}
+                    </div>
+                    <div className="flex gap-2 sm:flex-row flex-col">
                     <label htmlFor="subscription" className="sr-only">subscription</label>
                     <input type="email" id="subscription" placeholder="Email" name="subscribeEmail" className="border-2 border-gray-300 px-2 py-1 rounded-md"/>
                     <label htmlFor="subscribe" className="sr-only">Subscribe</label>
                     <button id ="subscribe" className="bg-goldenYellow-600 text-white px-2 py-1 border-1 border-transparent rounded-md hover:text-goldenYellow-500 hover:outline-1 hover:outline hover:outline-goldenYellow-500 hover:bg-transparent transition-transform">Subscribe</button>
+                    </div>
                 </form>
             </section>
             <section></section>

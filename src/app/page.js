@@ -12,13 +12,15 @@ export default function Home() {
     <NavBar />
    <Carousel />
   <Counters />
-   <id id="news"/>
+   <div id="news">
    <News />
-   <id id="events"/>
+   </div>
+   <div id="events">
    <Events />
-   <id id="about"/>
+   </div>
+   <div id="about">
    <MemberShip />
-   
+   </div>
    {/* <div id="gallery" />
    <Gallery /> */}
    <div id="contact" />
