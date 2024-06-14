@@ -51,7 +51,7 @@ function Slider({ title, img, description, button }) {
           {title}
         </motion.h1>
         <motion.p
-          className="max-w-xl mb-4 sm:mb-7 goldenYellow-700"
+          className="max-w-xl mb-4 sm:mb-7 text-goldenYellow-700"
           initial={{ scale: 1, opacity: 1 }}
           style={{ scale: yText, opacity: opacityText }}
           transition={{
