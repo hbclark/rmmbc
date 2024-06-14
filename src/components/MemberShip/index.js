@@ -112,7 +112,7 @@ export default function MemberShip() {
                 </div>
    <div className="flex flex-col  justify-center  items-center h-lvh w-full bg-[url('/images/shots/bike05.jpg')] bg-center bg-cover bg-no-repeat bg-fixed text-white text-left">
     <h1 className="uppercase text-3xl mb-4 text-red-500">ROck Wallaby</h1>
-    <p className="mb-2">Are you concerned about finding interesting places to ride?</p>
+    <p className="mb-2 text-red-500">Are you concerned about finding interesting places to ride?</p>
     <button className="mx-auto w-max mb-4 bg-goldenYellow-700 px-2 py-2 rounded-md hover:text-goldenYellow-700 hover:bg-transparent hover:outline hover:outline-1 hover:outline-goldenYellow-700">Learn More</button>
     
    </div>
