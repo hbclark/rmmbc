@@ -7,6 +7,7 @@ export default function Events() {
        {
        
         img: '/images/shots/the-view-below.jpg',
+       
         title:"Saturday - 29 September",
         schedules: [
         {
@@ -37,6 +38,7 @@ export default function Events() {
     },
     {
         img: '/images/shots/no-helmut.jpg',
+        
         title:"Sunday - 30 September",
         schedules:
         [{
