@@ -10,14 +10,14 @@ export default function News() {
                     <p className="w-1/2 mx-auto text-xl text-gray-700 mt-3">An unforgettable day of mountain biking featuring thrilling sprints, blue skies, and community spirit at the annual race event.</p>
                 </div>
                 <section className="mb-8 w-1/2 mx-auto">
-                {/* <iframe 
+                <iframe 
                         className="w-full aspect-video" 
                         src="https://www.youtube.com/embed/0zLuqKNKOqs" 
                         title="YouTube video player"
                       
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen>
-                    </iframe> */}
+                    </iframe>
                 </section>
                 <article className="prose  lg:prose-xl max-w-4xl mx-auto">
                     <p>Halfway through yesterday I said that I couldn&apos;t believe it was almost halfway finished. So much goes into an event like our 24 hour, that when it unfolds in front of you, it&apos;s almost unbelievable.</p>
