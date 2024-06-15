@@ -53,11 +53,11 @@ export default function Footer() {
                     initial={{ x: -20, opacity: 0 }}  whileInView={{x:0, opacity: 1}} whileHover={{translateY:-2}}  transition={{duration: 0.2,ease: "easeInOut"}}
                     ><FaArrowRight className="mt-1 mr-1 "/><Link href="/">Home</Link></motion.li>
                     <motion.li className="flex py-1 text-gray-800 hover:text-gray-600 hover:underline whileHover={{translateY:-2}}"
-                     initial={{ x: -20, opacity: 0 }}  whileInView={{x:0, opacity: 1}} whileHover={{translateY:-2}} transition={{duration: 0.2,ease: "easeInOut"}}><FaArrowRight className="mt-1 mr-1 "/><Link href="/purpose">Purpose</Link></motion.li>
+                     initial={{ x: -20, opacity: 0 }}  whileInView={{x:0, opacity: 1}} whileHover={{translateY:-2}} transition={{duration: 0.2,ease: "easeInOut"}}><FaArrowRight className="mt-1 mr-1 "/><Link href="#">Purpose</Link></motion.li>
                     <motion.li className="flex py-1 text-gray-800 hover:text-gray-600 hover:underline "
-                     initial={{ x: -20, opacity: 0 }}  whileInView={{x:0, opacity: 1}} whileHover={{translateY:-2}} transition={{duration: 0.2,ease: "easeInOut"}}><FaArrowRight className="mt-1 mr-1 "/><Link href="/about">About Us</Link></motion.li>
+                     initial={{ x: -20, opacity: 0 }}  whileInView={{x:0, opacity: 1}} whileHover={{translateY:-2}} transition={{duration: 0.2,ease: "easeInOut"}}><FaArrowRight className="mt-1 mr-1 "/><Link href="#">About Us</Link></motion.li>
                     <motion.li className="flex py-1 text-gray-800 hover:text-gray-600 hover:underline "
-                     initial={{ x: -20, opacity: 0 }}  whileInView={{x:0, opacity: 1}} whileHover={{translateY:-2}} transition={{duration: 0.2,ease: "easeInOut"}}><FaArrowRight className="mt-1 mr-1 "/><Link href="/contact">Contact Us</Link></motion.li>
+                     initial={{ x: -20, opacity: 0 }}  whileInView={{x:0, opacity: 1}} whileHover={{translateY:-2}} transition={{duration: 0.2,ease: "easeInOut"}}><FaArrowRight className="mt-1 mr-1 "/><Link href="#">Contact Us</Link></motion.li>
                 </ul>
             </section>
             <section>
@@ -84,8 +84,8 @@ export default function Footer() {
         >
             <p>Copyright &copy; {new Date().getFullYear()} A2Z ALl rights reserver</p>
             <ul className="flex sm:flex-row flex-col justify-between gap-4">
-                <li className="text-gray-800 hover:text-gray-600 hover:underline hover:-translate-y-[2px] transition-transform"><Link href="/privacy">Privacy Policy</Link></li>
-                <li className="text-gray-800 hover:text-gray-600 hover:underline hover:-translate-y-[2px] transition-transform"><Link href="/terms">Terms and Conditions</Link></li>
+                <li className="text-gray-800 hover:text-gray-600 hover:underline hover:-translate-y-[2px] transition-transform"><Link href="#">Privacy Policy</Link></li>
+                <li className="text-gray-800 hover:text-gray-600 hover:underline hover:-translate-y-[2px] transition-transform"><Link href="#">Terms and Conditions</Link></li>
             </ul>
         </div>
         </div>

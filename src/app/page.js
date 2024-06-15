@@ -20,8 +20,7 @@ export default function Home() {
    <div id="about">
    <MemberShip />
    </div>
-   {/* <div id="gallery" />
-   <Gallery /> */}
+  
    <div id="contact" />
    <Contact />  
 <ChatBox />

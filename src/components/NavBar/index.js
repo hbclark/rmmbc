@@ -97,11 +97,11 @@ export default function NavBar() {
               }}
             />
             
-            <a href="index.html"
+            <Link href="/"
                 className="absolute left-6 top-5 w-9 h-9">
                  
                 <Image src="/images/shots/icon.jpg" alt="A2Z Logo" width={30} height={30} className="mt-1"
-              /></a> 
+              /></Link> 
             <ul className="mt-14 flex flex-col gap-2 ">
             
             {navLinks.map((link,index) => (
